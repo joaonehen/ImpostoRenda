@@ -27,3 +27,27 @@ acima de 7 salários mínimos | 27,5%
 * Usabilidade, UX do frontend NÃO serão critérios avaliado.
 * É obrigatório o uso de REST para resolver o problema.
 * Testes unitários, divisão das camadas, modelagem, design patterns são fatores que serão levados em conta.
+
+## Sobre o projeto.
+
+O projeto IR tem o intuito de demonstrar uma aplicação em .Net Core para realizar calculo de imposto de renda.
+
+### Tecnologias
+* ASP.NET Core 2.0 (utilizando .NET Core)
+* ASP.NET WebApi Core
+* Vue.js 2.0
+* AutoMapper
+* MediatR (possibilitará Event Sourcing)
+* FluentValidator
+* Entity Framework Core 2.0
+* FluentAssertions
+* NSubstitute
+
+### Arquitetura
+* DDD (Domain Driven Design) utilizando arquitetura em camadas.
+* Generic Repository
+* Repository
+* Unit of Work
+* SOLID
+* Clean Code
+* Commands e Services (possibilitará aplicação de CQRS)
