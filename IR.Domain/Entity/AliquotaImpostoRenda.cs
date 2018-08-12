@@ -29,7 +29,7 @@ namespace IR.Domain.Entity
 
         public decimal ObterValorImpostoRenda(decimal salarioMinimo, decimal rendaLiquida)
         {
-            if ((rendaLiquida / salarioMinimo) > _quantidadeSalariosMinimos)
+            if ((rendaLiquida / _quantidadeSalariosMinimos) > salarioMinimo)
                 return _proximaAliquotaImpostoRenda?.ObterValorImpostoRenda(salarioMinimo, rendaLiquida) ?? 0m;
             return CalcularValorImpostoRenda(rendaLiquida);
         }

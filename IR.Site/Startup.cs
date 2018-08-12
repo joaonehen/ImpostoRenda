@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using IR.IoC;
 using IR.Service.AutoMapper;
+using IR.Site.Middlewares;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -61,6 +62,8 @@ namespace IR.Site
             }
 
             app.UseStaticFiles();
+
+            app.UseMiddleware(typeof(ErrorHandlingMiddleware));
 
             app.UseMvc(routes =>
             {
