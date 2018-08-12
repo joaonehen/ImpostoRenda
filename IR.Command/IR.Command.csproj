@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="7.6.104" />
+    <PackageReference Include="MediatR" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IR.Domain\IR.Domain.csproj" />
+    <ProjectReference Include="..\IR.Utils\IR.Utils.csproj" />
+  </ItemGroup>
+
+</Project>
