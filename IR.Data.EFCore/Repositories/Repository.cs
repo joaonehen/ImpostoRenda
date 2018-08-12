@@ -22,6 +22,7 @@ namespace IR.Data.EFCore.Repositories
 
         public void Add(T obj)
         {
+            obj.Created = DateTime.Now;
             Set.Add(obj);
         }
 
@@ -47,6 +48,7 @@ namespace IR.Data.EFCore.Repositories
 
         public void Update(T obj)
         {
+            obj.Updated = DateTime.Now;
             Set.Update(obj);
         }
 
