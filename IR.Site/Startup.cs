@@ -39,7 +39,8 @@ namespace IR.Site
             AutoMapperConfigure.Configure();
 
             services.AddMediatR(typeof(Startup));
-            services.AddMvcCore();
+
+            
             services.AddMvc();
         }
 
